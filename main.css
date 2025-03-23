@@ -1,0 +1,403 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #ca81815a;
+}
+.clr {
+  clear: both;
+}
+
+
+/* Better to use margin & pading with 'PX' than '%' */
+
+/* ****************sticker*************** */
+
+.sticker img {
+  width: 3%;
+  position: fixed;
+  bottom: 50%;
+  right: 1%;
+  z-index: 1; 
+}
+/* ***********background head*************** */
+header {
+  width: 100%;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 10px;
+}
+/* *******************head & icon******************** */
+.head-logo{
+  display: inline-block;
+vertical-align: top;}
+.head-logo img {
+  align-content: center;
+  /* margin-top: 1px; */
+  width: 150px;
+  /* float: left; */
+  margin-left: 100px;
+}
+
+/* *******************nav bar******************** */
+.head-nav ul {
+   display: flex;  /* to bring list items behind each other  */
+  list-style: none; /* to remove the bullets */
+  margin-right: 30px;
+}
+.head-nav ul li a {
+  margin: 0 10px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.head-nav ul li :hover {
+  color: #f44336;
+}
+
+.head-nav {
+display: inline-block;
+  margin-left: 20%;
+  vertical-align: bottom;
+}
+/* *********************sticky bar ************* */
+
+header nav {
+  background-color: #ca8181bf;
+  position: sticky;
+  top: 0;
+  z-index: 1; /* give the val to override other elements */
+}
+
+/* note that sticky bar hide in end of section if we want to show in whole page we need to give position & z-index to hole section */
+/*   ******************section for home text******************  */
+
+header section {
+  font-size: 50px;
+  color: white;
+}
+header section h1 span {
+  display: block;
+  font-size: 85px;
+  letter-spacing: 50px;
+}
+header section h1 {
+  -webkit-text-stroke: 1px rgb(206, 117, 117);
+  margin-left: 55%;
+}
+header section p {
+  width: fit-content;
+  padding-right: 1%;
+  padding-left: 1%;
+  background-color: #eeeeee82;
+  backdrop-filter: blur(2px);
+  color: #cc4343;
+}
+/* *******************Buttons******************** */
+header .buttons {
+  text-align: center;
+}
+header .buttons a {
+  border: 2px solid #f44336;
+  text-decoration: none;
+  color: #f44336;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 0 20px;
+}
+header .buttons .button2 {
+  background-color: #f44336;
+  color: white;
+}
+header .buttons .button1:hover,
+header .buttons .button2:hover {
+  background-color: #c7bb6e;
+  color: white;
+  border: 0;
+  transition: all 0.5s ease;
+}
+/* button to about */
+.fl-button {
+  border: #cc4343 2px solid;
+  margin: 35px 49% 0;
+  width: 22px;
+  height: 40px;
+  text-align: center;
+  border-radius: 24px;
+  cursor: pointer;
+}
+.fl-button a  {
+  text-decoration: none;
+  color: #cc4343;
+  font-size: 35px;
+  border-radius: 24px;
+  text-align: center;
+}
+.fl-button :hover {
+  color: white;
+  transition: all 0.5s ease;
+}
+
+
+/* ************ who we are*************** */
+.about {
+  /* background-color: aqua; */
+  margin: 30px 0;
+  padding: 0 100px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.about-text {
+  width: 40%;
+  display: inline-block;
+  padding: 0 30px  ;
+  margin-left: 30px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.about-image {
+  display: inline-block;
+  width: 49%;
+  vertical-align: center;
+  box-sizing: border-box;
+  margin-right: 30px;
+
+}
+.about-text h2,
+.location-text h2 {
+  text-align: left;
+  font-size: 50px;
+  color: #f44336;
+}
+.about-text p,
+.location-text p {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(67, 58, 58);
+  margin-top: 20px;
+}
+
+.about-image img,
+.location-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* *********** icons ************* */
+.icoons img {
+  width: 30px;
+  display: inline-block;
+}
+.icoons p {
+  display: inline-block;
+  font-size: 20px;
+}
+/* **********location*********** */
+.location {
+  /* background-color: aqua; */
+  margin: 30px 0;
+  padding: 0 100px;
+
+}
+.location-text {
+display: inline-block;
+  width: 40%;
+  margin-left: 2%;
+  padding: 2%;
+}
+.location-text p {
+  text-align: left;
+  line-height: 2;
+}
+.location-image {
+display: inline-block;
+  vertical-align: center;
+  width: 45%;
+  margin-left: 2%;
+  padding: 2%;
+}
+/* **************our flower*********** */
+.our-flower {
+  /* background-color: aqua; */
+  margin: 30px auto;
+  padding: 0 100px;
+  text-align: center;
+}
+.our-flower h2 {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 300%;
+  color: #f44336;
+}
+.our-flower p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(67, 58, 58);
+  margin-top: 20px;
+}
+.flower-card-inner{
+  padding: 50px;
+}
+.flower-card-inner div {
+  background-color: #f443363c;
+  border-radius: 40px;
+
+}
+.flower-card {
+  /* background-color: #ca8181bf; */
+  width: 33%;
+  padding: 10px;
+  margin: 30px;
+  float: left;
+  filter: blur(1.5px);
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flower-card img {
+  width: 100%;
+}
+.flower-image {
+  text-align: center;
+}
+.flower-card:hover {
+  /* background-color: #f4433649; */
+  color: white;
+  transform: scale(1.1);
+  filter: blur(0px);
+}
+.flower-card p {
+  color: white;
+}
+.flower-card p del {
+  color: rgba(67, 58, 58, 0.544);
+}
+/* ******************Contact information********************* */
+.con-info {
+  /* background-color: aqua; */
+padding: 0 100px;
+margin: 30px auto;
+
+  
+}
+.info-text {
+  width: 35%;
+  /* margin-left: 10%; */
+  margin-right: 10%;
+  float: left;
+}
+.info-text h2 {
+  text-align: left;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 200%;
+  color: #f44336;
+}
+.info-text p {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #433a3a;
+  margin-top: 2%;
+}
+.info-list {
+  /* background-color: aqua; */
+  margin-top: 20px;
+  list-style: none;
+  line-height: 40px;
+  padding-left: 30px;
+}
+.info-list li {
+  margin-top: 2%;
+  margin-left: -7%;
+}
+.info-list li img {
+  width: 22px;
+}
+.info-list li span {
+  margin: 1%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #b7a218;
+}
+.gog-frame iframe {
+  margin: 10px 30px 0;
+  float: right;
+  width: 450px;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+/* *************** footer ******************* */
+.part1 {
+  padding: 10px 80px;
+  text-align: center;
+  background-color: #f4433618;
+}
+footer .parts {
+  text-align: left;
+  /* background-color: #ab0b0bbf; */
+  width: 25%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 1%;
+}
+footer .parts h4 {
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  color: #f44336;
+}
+footer .parts ul {
+  list-style: none;
+  padding: 0;
+}
+footer .parts ul li {
+  color: #433a3a;
+  font-weight: bold;
+  font-size: 85%;
+  line-height: 150%;
+  margin-top: 10px;
+  border-bottom: 1px solid #f4433677;
+}
+footer .parts ul li::before {
+  content: ">";
+  color: #f4433677;
+  padding-right: 3%;
+}
+.part2 {
+  background-color: #f443363f;
+}
+.part2 {
+  text-align: center;
+  padding: 2%;
+}
+.part2 img {
+  width: 25%;
+}
+.part2 p {
+  font-size: 15px;
+  color: #433a3a;
+}
+.social {
+  text-align: center;
+  padding: 0.5% 0;
+}
+.social a {
+  padding: 1% 1%;
+}
+.social a img {
+  width: 2.5%;
+  filter: grayscale(70%);
+}
+.social a:hover img {
+  filter: grayscale(0%);
+  transition: all 0.2s ease;
+}
