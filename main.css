@@ -1,6 +1,7 @@
 body {
   font-family: "Courier New", Courier, monospace;
   background-color: #ca81815a;
+  margin: 0;
 }
 .clr {
   clear: both;
